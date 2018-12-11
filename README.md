@@ -4,7 +4,7 @@ We have implemented a “styleStudio” application. Our application allows the 
 and then is able to customize his/her look from a list of features.
 Our idea is inspired by our belief that people should be encouraged to express themselves in new, fun, and creative ways.
 
-## Current Features: 
+## Current Features:
 
 Glasses (-g):
 
@@ -39,24 +39,40 @@ Necklaces (-n):
 
 Make sure you have Python 3.7 installed locally.
 
-    $ git clone https://github.com/jcordell/cs534-project.git
+    $ git clone https://github.com/jcordell/cs534-style-studio.git
 
-    $ cd cs534-project
+Change directories into the project directory
 
-    $ python3 -m venv cs534-project
+    $ cd cs534-style-studio
+    
+Create a new virtual environment for this project
 
-    $ pip3 install -r requirements.txt
+    $ virtualenv venv
 
-## To run
+Activate this virtual environment (You should see a (venv) appear at the beginning of your terminal prompt indicating that you are working inside the virtualenv)
+    
+    $ source venv/bin/activate
 
-Step 1: first add your selfie (jpg or png) into the images folder
+Install all requirements from our requirements.txt file (This may take a few minutes)
 
-Step 2: determine features you would like to apply
+    $ pip install -r requirements.txt
 
-Run:
+## To Run
 
-    # Using the -h flag will describe command options
+Step 1: Add your selfie (jpg or png) into the images folder
+        OR
+        you may use an image that is already in the images folder
+        
+
+Step 2: Determine features you would like to apply
+
+
+
+Examples:
+
+    # Using the -h flag will list descriptions of all command options
     python3 main.py -h
     
-    # this will add circle glasses, a full brown beard, and diamond stud earings to my selfie
+    # this will add circle glasses, a full brown beard, and diamond stud earings to myselfie.jpg
     python3 main.py -i images/myselfie.jpg -g -circles -b -brown_full -e -diamond_stud
+    
