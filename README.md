@@ -48,7 +48,7 @@ Change directories into the project directory
 Create a new virtual environment for this project
 
     $ virtualenv venv
-    note: You may need to run: pip install virtualenv
+    note: You may need to run: pip3 install virtualenv
 
 Activate this virtual environment (You should see a (venv) appear at the beginning of your terminal prompt indicating that you are working inside the virtualenv)
     
@@ -56,7 +56,7 @@ Activate this virtual environment (You should see a (venv) appear at the beginni
 
 Install all requirements from our requirements.txt file (This may take a few minutes)
 
-    $ pip install -r requirements.txt
+    $ pip3 install -r requirements.txt
 
 ## To Run
 
